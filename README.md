@@ -1,4 +1,4 @@
-# MeteorJS Task Assistant
+# MeteorJS Meddit App
 
 ## Instructions
 
