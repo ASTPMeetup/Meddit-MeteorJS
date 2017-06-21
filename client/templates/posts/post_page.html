@@ -2,9 +2,30 @@
   <div class="post-page page">
     <div class="post">
       <div class="post-content">
-        <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+        <h3><a href="{{url}}">{{title}}</a> / <span>{{domain}}</span></h3>
+        <br>
+        <p>
+          {{username}}
+          {{#if ownPost}}(<a href="{{pathFor 'postEdit'}}">Edit</a>){{/if}}
+        </p>
       </div>
-      <a href="{{pathFor 'postsList'}}" class="discuss btn btn-default">Back</a>
+      <a href="{{pathFor 'postsList'}}" class="discuss btn btn-default">Home Page</a>
     </div>
+    <ul class="comments">
+      {{#each comments}}
+        {{> commentItem}}
+      {{/each}}
+
+      {{#if currentUser}}
+        <li>
+          {{> commentSubmit}}
+        </li>
+      {{else}}
+        <li>
+          <p>Please log in to leave a comment.</p>
+        </li>
+      {{/if}}
+    </ul>
+
   </div>
 </template>

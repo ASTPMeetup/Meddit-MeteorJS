@@ -5,7 +5,7 @@
 	margin-bottom: 10px;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); 
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 body {
 background: #eee;
@@ -57,43 +57,43 @@ float: left; }
 .post .post-content h3 {
 margin: 0;
 line-height: 1.4;
-font-size: 18px; 
+font-size: 18px;
 }
 .post .post-content h3 a {
 	display: inline-block;
-	margin-right: 5px; 
+	margin-right: 5px;
 }
 .post .post-content h3 span {
 	font-weight: normal;
 	font-size: 14px;
 	display: inline-block;
-	color: #aaaaaa; 
+	color: #aaaaaa;
 }
 .post .post-content p {
-	margin: 0; 
+	margin: 0;
 }
 .post .discuss {
 	display: block;
 	float: right;
-	margin-top: 7px; 
+	margin: 15px 15px 0px 0px;
 }
 .comments {
 	list-style-type: none;
-	margin: 0; 
+	margin: 0;
 }
 .comments li h4 {
 	font-size: 16px;
-	margin: 0; 
+	margin: 0;
 }
 .comments li h4 .date {
 	font-size: 12px;
-	font-weight: normal; 
+	font-weight: normal;
 }
 .comments li h4 a {
-	font-size: 12px; 
+	font-size: 12px;
 }
 .comments li p:last-child {
-	margin-bottom: 0; 
+	margin-bottom: 0;
 }
 .dropdown-menu span {
 	display: block;
@@ -101,7 +101,7 @@ font-size: 18px;
 	clear: both;
 	line-height: 20px;
 	color: #bbb;
-	white-space: nowrap; 
+	white-space: nowrap;
 }
 .load-more {
 	display: block;
@@ -110,11 +110,11 @@ font-size: 18px;
 	text-align: center;
 	height: 60px;
 	line-height: 60px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
 }
 .load-more:hover {
 	text-decoration: none;
-	background: rgba(0, 0, 0, 0.1); 
+	background: rgba(0, 0, 0, 0.1);
 }
 .posts .spinner-container{
 	position: relative;
@@ -150,9 +150,9 @@ font-size: 18px;
 	pointer-events: none;
 }
 .alert {
-	animation: fadeOut 2700ms ease-in 0s 1 forwards;
-	-webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
-	-moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+	animation: fadeOut 3500ms ease-in 0s 1 forwards;
+	-webkit-animation: fadeOut 3500ms ease-in 0s 1 forwards;
+	-moz-animation: fadeOut 3500ms ease-in 0s 1 forwards;
 	width: 250px;
 	float: right;
 	clear: both;

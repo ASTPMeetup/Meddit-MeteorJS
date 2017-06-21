@@ -1,9 +1,11 @@
 <template name="postsList">
-  <div class="posts">
-    {{#each posts}}
-      {{> postItem}}
-    {{/each}}
-  </div>
+  {{#if currentUser}}
+    <div class="posts">
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
+    </div>
+  {{/if}}
   <br>
   <br>
 </template>

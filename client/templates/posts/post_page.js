@@ -1,7 +1,10 @@
-import { Template } from 'meteor/templating';
-import { Meteor } from 'meteor/meteor';
+Template.postPage.helpers({
+  comments: function() {
+    return Comments.find({postId: this._id});
+  }
+});
 
-Template.postItem.helpers({
+Template.postPage.helpers({
   ownPost: function() {
     return this.userId === Meteor.userId();
   },
@@ -15,13 +18,5 @@ Template.postItem.helpers({
     var a = document.createElement('a');
     a.href = this.url;
     return a.hostname;
-  },
-  commentsNum: function() {
-    var commentCounter = this.commentsCount;
-    if (commentCounter === 1) {
-      return commentCounter + ' comment';
-    }
-
-    return commentCounter + ' comments';
   }
 });
