@@ -1,8 +1,8 @@
 <template name="postItem">
   <div class="post">
+    {{#if currentUser}}<button type="button" class="upvote btn {{upvoteButtonView}}">&uarr;</button>{{/if}}
     <div class="post-content">
       <h3><a href="{{url}}">{{title}}</a> / <span>{{domain}}</span></h3>
-      <br>
       <p>
         {{username}}
         <a href="{{pathFor 'postPage'}}"> - {{commentsNum}}</a>

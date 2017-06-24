@@ -21,7 +21,29 @@ Template.postItem.helpers({
     if (commentCounter === 1) {
       return commentCounter + ' comment';
     }
-
     return commentCounter + ' comments';
+  },
+  upvoteButtonView: function() {
+    let userId = Meteor.userId();
+
+    console.log(this.upvoters);
+
+    if(userId && this.upvoters.indexOf(userId) === -1) {
+      return 'btn-outline-primary upvotable';
+    }
+    else {
+      return 'btn-primary';
+    }
   }
+});
+
+Template.postItem.events({
+   'click .upvote': function(e){
+     e.preventDefault();
+     Meteor.call('upvote', this._id, function(error, result){
+         if (error) {
+             throwError(error.reason);
+         }
+     });
+   }
 });
