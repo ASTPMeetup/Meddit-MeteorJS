@@ -2,6 +2,10 @@ Template.postSubmit.onCreated(function() {
   Session.set('postSubmitErrors', {});
 });
 
+Template.postSubmit.onRendered(function(){
+    Session.set('sortOptions', 'null');
+});
+
 Template.postSubmit.helpers({
   errorMessage: function(postAttr) {
     return Session.get('postSubmitErrors')[postAttr];

@@ -1,3 +1,7 @@
+Template.postPage.onRendered(function(){
+    Session.set('sortOptions', 'null');
+});
+
 Template.postPage.helpers({
   comments: function() {
     return Comments.find({postId: this._id});

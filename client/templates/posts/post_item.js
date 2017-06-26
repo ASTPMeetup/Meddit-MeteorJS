@@ -16,17 +16,8 @@ Template.postItem.helpers({
     a.href = this.url;
     return a.hostname;
   },
-  commentsNum: function() {
-    var commentCounter = this.commentsCount;
-    if (commentCounter === 1) {
-      return commentCounter + ' comment';
-    }
-    return commentCounter + ' comments';
-  },
   upvoteButtonView: function() {
     let userId = Meteor.userId();
-
-    console.log(this.upvoters);
 
     if(userId && this.upvoters.indexOf(userId) === -1) {
       return 'btn-outline-primary upvotable';

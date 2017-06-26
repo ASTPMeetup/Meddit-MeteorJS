@@ -13,10 +13,16 @@
       <ul class="nav navbar-nav">
         {{#if currentUser}}
             <li>
-                <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
+                <a class="submit" href="{{pathFor 'postSubmit'}}">Submit Post</a>
             </li>
             <li class="dropdown">
                 {{> notifications}}
+            </li>
+            <li class="{{activeTopTab}}">
+                <a href="#" class="sortByVotes">Top</a>
+            </li>
+            <li class="{{activeRecentTab}}">
+                <a href="#" class="sortByRecent">Recent</a>
             </li>
         {{/if}}
       </ul>

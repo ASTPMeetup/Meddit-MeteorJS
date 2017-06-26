@@ -2,6 +2,10 @@ Template.postEdit.onCreated(function() {
   Session.set('postEditErrors', {});
 });
 
+Template.postEdit.onRendered(function(){
+    Session.set('sortOptions', 'null');
+});
+
 Template.postEdit.helpers({
   errorMessage: function(postAttr) {
     return Session.get('postEditErrors')[postAttr];
