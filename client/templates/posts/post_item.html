@@ -2,11 +2,12 @@
   <div class="post">
     {{#if currentUser}}<button type="button" class="upvote btn {{upvoteButtonView}}">&uarr;</button>{{/if}}
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a> / <span>{{domain}}</span></h3>
+        <div class="post-title">
+            <h3><a href="{{url}}">{{title}}</a> <span>{{domain}}</span></h3></div>
       <p>
         {{pluralize votes "Vote"}} /
         {{username}}
-        <a href="{{pathFor 'postPage'}}"> - {{pluralize commentsCount "comment"}}</a>
+        <a href="{{pathFor 'postPage'}}">({{pluralize commentsCount "comment"}})</a>
       </p>
     </div>
     <a href="{{pathFor 'postPage'}}" class="discuss btn btn-info">Discuss</a>

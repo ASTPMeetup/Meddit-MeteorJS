@@ -18,13 +18,14 @@
             <li class="dropdown">
                 {{> notifications}}
             </li>
+        {{/if}}
+
             <li class="{{activeTopTab}}">
                 <a href="#" class="sortByVotes">Top</a>
             </li>
             <li class="{{activeRecentTab}}">
                 <a href="#" class="sortByRecent">Recent</a>
             </li>
-        {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{> loginButtons}}

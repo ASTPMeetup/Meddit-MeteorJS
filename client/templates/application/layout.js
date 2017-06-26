@@ -1,10 +1,15 @@
-
-// ***remove or establish default Session value for 'pageTitle' before deployment****
-
-// Template.layout.helpers({
-//   pageTitle: function() { return Session.get('pageTitle'); }
-// })
-//
-// Tracker.autorun(function(){
-//   console.log('New title! ' + Session.get('pageTitle'));
-// });
+Template.layout.onRendered(function() {
+    this.find('#main')._uihooks = {
+        insertElement: function(node, next) {
+            $(node)
+                .hide()
+                .insertBefore(next)
+                .fadeIn("fast");
+        },
+        removeElement: function(node) {
+            $(node).fadeOut("fast", function() {
+                $(this).remove();
+            });
+        }
+    }
+});

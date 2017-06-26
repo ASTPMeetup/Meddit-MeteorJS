@@ -6,4 +6,10 @@
       {{> yield}}
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+  <script>
+      $(window).on('load', function () {
+          AOS.refresh();
+      });
+  </script>
 </template>
