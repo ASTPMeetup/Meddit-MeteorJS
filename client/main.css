@@ -1,4 +1,4 @@
-.grid-block, .main, .post, .comments li, .comment-form {
+.grid-block, .main, .post, .comments li, .comment-form, .profile {
 	background: #fff;
 	border-radius: 3px;
 	padding: 10px;
@@ -20,7 +20,9 @@ body {
 	padding: 15px;
 }
 .navbar {
-	margin-bottom: 10px; }
+	margin-bottom: 10px;
+	padding: 0px 20px 0px 20px;
+}
 /* line 32, ../sass/style.scss */
 .navbar .navbar-inner {
 	border-radius: 0px 0px 3px 3px; }
@@ -66,7 +68,7 @@ body {
 .post .post-content h3 a {
 	display: inline-block;
 	margin-right: 5px;
-	color: #F05F40;
+	color: blue;
 }
 .post .post-content h3 span {
 	font-weight: normal;
@@ -178,4 +180,9 @@ li a:hover {
 		margin: 7px 12px 14px 0;
 		width: 100%;
 	}
+}
+.profile {
+	background: #ffffff;
+	min-height: 250px;
+	padding-left: 25px;
 }

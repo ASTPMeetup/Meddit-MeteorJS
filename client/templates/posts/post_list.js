@@ -60,5 +60,11 @@ Template.postsList.helpers({
     }
 
     return Posts.find({}, {sort: { submitted: -1}});
-  }
+  },
+  // postTally: function() {
+  //     return this.profile.postsTotal.count();
+  // },
+  // commentsTally: function() {
+  //     return this.profile.commentsTotal;
+  // }
 });
