@@ -9,6 +9,7 @@
 body {
 	background: #000033;
 	color: #777;
+	padding-right: 15px;
 }
 #main {
 	position: relative;
