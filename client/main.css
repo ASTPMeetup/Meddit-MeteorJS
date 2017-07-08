@@ -11,6 +11,13 @@ body {
 	color: #777;
 	padding-right: 15px;
 }
+.top {
+	/*background: #11132E;*/
+	/*background: url(https://crater.io/crater-bg.png);*/
+	/*color: white;*/
+	/*background-size: cover;*/
+	/*padding-bottom: 20px;*/
+}
 #main {
 	position: relative;
 }
