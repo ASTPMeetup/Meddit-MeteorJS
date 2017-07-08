@@ -45,7 +45,8 @@ Template.postEdit.events({
     e.preventDefault();
 
     if (confirm("Are you sure?")) {
-      Posts.remove(this._id);
+      Meteor.call('postRemove', this._id);
+      Meteor.users.update(this.userId, {$inc: { "profile.postsNum" : -1}});
       Router.go('postsList');
     }
   }

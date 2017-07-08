@@ -1,5 +1,14 @@
-<template name="profilePage">
-    <h3>Welcome, <small>{{username}}</small></h3>
-    <hr>
-    <p>Links Posted: {{postCount}}</p>
+<template name="profilePage" xmlns="http://www.w3.org/1999/html">
+    <div class="profile">
+        <div class="profile-name">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span> {{username}}</span>
+        </div>
+        <hr>
+        <div>
+            <p><i class="fa fa-pencil-square-o"></i> Links Posted: {{postsNum}}</p>
+            <p><i class="fa fa-commenting-o"></i> Comments Posted: {{commentsNum}}</p>
+            <p><i class="fa fa-fire"></i> Upvotes received: {{upVotesReceived}}</p>
+        </div>
+    </div>
 </template>

@@ -1,5 +1,11 @@
 <template name="postsList">
-    <div class="posts">
+    {{#if currentUser}}
+    <div class="col-lg-3 col-sm-12">
+        {{> profilePage }}
+    </div>
+    {{/if}}
+
+    <div class="posts col-lg-9 col-sm-12">
         <section class="animation-wrapper">
             {{#each posts}}
                 {{> postItem}}

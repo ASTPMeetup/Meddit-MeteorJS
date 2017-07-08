@@ -15,13 +15,12 @@ Template.commentSubmit.events({
   'submit form': function(e, template) {
     e.preventDefault();
 
-    console.log(template);
-
     const commentPost = $(e.target).find('[name=body]');
 
     const newComment = {
       body: commentPost.val(),
-      postId: template.data._id
+      postId: template.data._id,
+      postAuthor: template.data.userId
     }
 
     let errors = {};

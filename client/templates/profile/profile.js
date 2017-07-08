@@ -1,11 +1,14 @@
 Template.profilePage.helpers({
     username: function() {
-        let user = Meteor.user();
-        let userName = user.emails[0]['address'];
-        return userName;
+        return Meteor.user().emails[0]['address'];
     },
-    postCount: function(){
-        let publications = Posts.find({userId : Meteor.userId()});
-        return publications.count();
+    postsNum: function(){
+        return Meteor.user().profile.postsNum;
+    },
+    commentsNum: function(){
+        return Meteor.user().profile.commentsNum;
+    },
+    upVotesReceived: function(){
+        return Meteor.user().profile.upVotesReceived;
     }
 });

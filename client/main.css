@@ -11,6 +11,14 @@ body {
 	color: #777;
 	padding-right: 15px;
 }
+.top {
+	/*background: #11132E;*/
+	/*background: url(https://crater.io/crater-bg.png);*/
+	/*color: white;*/
+	/*background-size: cover;*/
+	/*padding-bottom: 20px;*/
+	/*min-height: 300px;*/
+}
 #main {
 	position: relative;
 }
@@ -184,6 +192,9 @@ li a:hover {
 }
 .profile {
 	background: #ffffff;
-	min-height: 250px;
-	padding-left: 25px;
+	padding: 15px;
+}
+.profile-name {
+	display: inline;
+	font-size: 18px;
 }
